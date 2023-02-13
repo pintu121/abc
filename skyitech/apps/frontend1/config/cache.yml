@@ -1,0 +1,21 @@
+default:
+  enabled:     off
+  with_layout: false
+  lifetime:    1800
+
+## category list homepage
+_category:
+  enabled: on
+  lifetime:    600
+
+## latest update homepage
+_updates:
+  enabled: on
+  lifetime:    600
+
+# latest update pages 
+latestupdates:
+  enabled: on
+  lifetime:    36000
+
+                            

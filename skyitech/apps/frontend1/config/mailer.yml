@@ -1,0 +1,8 @@
+default:
+    deliver:         on
+    mailer:          smtp
+    domain:        localhost.localdomain
+    hostname:      mail.mirchiloft.com
+    port:             25
+    username:     admin@mirchiloft.com
+    password:     eIc97JTeySeF

@@ -1,0 +1,22 @@
+default:
+  http_metas:
+    content-type: text/html
+
+  metas:
+    title:        default - Admin - MirchiLoft.Com &raquo; Powered By SKYiTech
+    robots:       no-index, no-follow
+    language:     en
+
+  stylesheets:    [main]
+
+  javascripts:    [/js/jquery.min.js, /js/ckeditor/ckeditor.js]
+  has_layout:     on
+  layout:         layout
+
+dev:
+  metas:
+    title:        dev-1m.in - Admin &raquo; Powered By SKYiTech
+
+mirchiloft:
+  metas:
+    title:        MirchiLoft.Com- Admin &raquo; Powered By SKYiTech

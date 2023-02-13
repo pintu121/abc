@@ -1,0 +1,38 @@
+dev:
+  webpath:   /
+  sitename: mirchiloft.sky
+  smallname: mirchiloft
+  filename2hide: (MirchiLoft.Com)
+  onlinetime: 600
+
+mirchiloft:
+  webpath:   /
+  sitename: MirchiLoft.Com
+  smallname: mirchiloft
+  filename2hide: (MirchiLoft.Com)
+  onlinetime: 600
+  webmaster: mirchiloft.com <mirchiloft.com@gmail.com>
+
+mirchiloft_m:
+  webpath:   /
+  sitename: m.MirchiLoft.Com
+  smallname: mirchiloft
+  filename2hide: (MirchiLoft.Com)
+  onlinetime: 600
+  webmaster: mirchiloft.com <mirchiloft.com@gmail.com>
+
+all:
+  sfImageTransformPlugin:
+   default_adapter: GD # GD or ImageMagick
+   default_image:
+     mime_type: image/png
+     filename: Untitled.png
+     width: 100
+     height: 100
+     color: '#FFFFFF'
+   font_dir: /usr/share/fonts/truetype/msttcorefonts
+   mime_type:
+     auto_detect: true
+     library: gd_mime_type #  gd_mime_type (GD), Fileinfo (PECL), MIME_Type (PEAR)
+
+                            

@@ -1,0 +1,129 @@
+<?php
+if(USERDEVICE=='m'):
+?><!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<?php else: ?>
+<!DOCTYPE html>
+<?php endif; ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<?php include_http_metas() ?>
+<?php include_metas() ?>
+<?php include_title() ?>
+<link rel="shortcut icon" href="/images/favicon.ico" />
+<?if($sf_params->get('module').$sf_params->get('action')=='categorylist'){?>
+<meta name="Description" content="<? include(success_dir.'meta-cat.php');?>" /> <?}?>
+ <?php if($sf_params->get('module').$sf_params->get('action')=='filesshow'){
+if($files->extension=='MP3' || $files->extension=='WAV' || $files->extension=='MID'){?>
+<meta name="Description" content="<? include(success_dir.'meta-file.php');?>" /> <?}
+if($files->extension=='MP4' || $files->extension=='3GP' || $files->extension=='AVI'){?>
+<meta name="Description" content="<? include(success_dir.'meta-file1.php');?>" /> <?} }?>
+<meta name="Description" content="Download latest bollywood mp3 songs & indian music collection at songspk" />
+<meta name="category" content="Streaming Media and Download"> 
+<meta name='Author ' content='Mirchi Loft'/>
+<meta name='Rating' content='Safe For Kids'/>
+<meta name="keywords" content="Bollywood music,Bollywood music download,Indian video songs,Music bollywood,Bollywood music videos"/>
+<meta name="copyright" content="MirchiLoft.CoM, 2014. All rights Reserved."/>
+<meta name="msvalidate.01" content="DF70E4A4FF01B0674D49557D9570D82C" />
+<meta name="majestic-site-verification" content="MJ12_0a750f38-30a6-4eef-9929-8f240c7df206">
+<?php if(USERDEVICE=='a'){ ?>
+<link href="/stylesheet/<?php echo sfConfig::get('app_smallname')?>_app.css?1.1" type="text/css" rel="stylesheet"/>
+<?php }else{ ?>
+<link href="/stylesheet/<?php echo sfConfig::get('app_smallname')?>.css?1.1" type="text/css" rel="stylesheet"/>
+<?php } ?>
+</head>
+<body>
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-53705734-1', 'mirchiloft.com');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+	<?php if(USERDEVICE!='a'){ ?>
+	<div class="logo"><a href="/"><img alt="<?php echo sfConfig::get('app_sitename')?>" src="/logo/logo_<?php echo USERDEVICE; ?>_<?php echo sfConfig::get('app_smallname')?>.gif" /></a></div>
+	<?php } ?>
+	<div id="mainDiv">
+	<?php
+		if($sf_params->get('module')=='default'){
+			include(sfConfig::get('sf_upload_dir').'/advt/'.USERDEVICE.'_homeTop.php');
+		}
+		else
+		{
+			include(sfConfig::get('sf_upload_dir').'/advt/'.USERDEVICE.'_allPageTop.php');
+		}
+	?>
+	<div class="devider">&nbsp;</div>
+	<?php
+		if($sf_params->get('module').$sf_params->get('action')=='defaultindex' || $sf_params->get('module').$sf_params->get('action')=='filessearch')
+		{
+		echo '<div class="search tCenter">';
+		echo form_tag('files/search','method=get');
+		echo 'Search : '.input_tag('find',($sf_params->get('action')=='search' ? base64_decode($sf_params->get('find')):''),'size=15');
+		echo select_tag('ext', options_for_select(myUser::searchExts(), $sf_params->get('ext') ? $sf_params->get('ext') : 'ALL'));
+		echo submit_tag('Search','id=file');
+		echo '</form>';
+		echo '</div>';
+		}
+	?>
+	<?php echo $sf_data->getRaw('sf_content') ?>
+	<?php
+	if($sf_params->get('module').$sf_params->get('action')=='categorylist')
+		include(success_dir.'categoryList.php');
+	if($sf_params->get('module').$sf_params->get('action')=='fileslist')
+		include(success_dir.'filesList.php');
+	if($sf_params->get('module').$sf_params->get('action')=='filesshow')
+		include(success_dir.'fileShow.php');
+	if($sf_params->get('module').$sf_params->get('action')=='fileslastadded')
+		include(success_dir.'lastAdded.php');
+	if($sf_params->get('module').$sf_params->get('action')=='filestop')
+		include(success_dir.'topDownload.php');
+	?>
+
+	<?php
+	if($sf_params->get('module')=='default'){
+		include_partial('global/updates');
+		echo '<div class="path"><center>';
+		echo '<b>Top 21 Downloads:</b><br/>'.link_to('Today','@topFiles?type=today');
+		echo ' | '.link_to('Yesterday','@topFiles?type=yesterday');
+		echo ' | '.link_to('Week','@topFiles?type=week');
+		echo ' | '.link_to('Month','@topFiles?type=month');
+		echo '</center></div>';
+		include_partial('global/category');
+	}
+	/*
+	* Close Mysql Connection
+	*/
+	closeDB();
+?>
+
+<?php if($sf_params->get('module')=='default'): ?>
+	<?php include(sfConfig::get('sf_upload_dir').'/advt/'.USERDEVICE.'_homeBottom.php'); ?>
+<?php else: ?>
+<?php include(sfConfig::get('sf_upload_dir').'/advt/'.USERDEVICE.'_allPageBottom.php'); ?>
+<?php endif; ?>
+<div class="dtype">
+<?if($sf_params->get('module').$sf_params->get('action')=='fileslist'){?>
+	<?php if($files->extension=='MP3' || $files->extension=='WAV' || $files->extension=='MID'): ?>
+<B>TAG:-</B>
+<?php echo $catName;?>  movie songs download, <?php echo $catName;?>  Movie mp3, <?php echo $catName;?> dJ mix songs, <?php echo $catName;?>  Songs, <?php echo $catName;?> mp3 songs free download, <?php echo $catName;?> video songs, <?php echo ''. str_replace(sfConfig::get('app_filename2hide'),'', $files->file_name); ?> Song Free Download, <?php echo ''. str_replace(sfConfig::get('app_filename2hide'),'', $files->file_name); ?> Full Video Song HD MP4 - 3GP Download
+<?php endif; ?>
+
+	<?php if($files->extension=='AVI' || $files->extension=='3GP' || $files->extension=='MP4'): ?>
+<B>TAG:-</B>
+<?php echo $catName;?> download Videos, <?php echo $catName;?> 3gp,avi,mp4 videos download, <?php echo $catName;?> high quality videos, <?php echo $catName;?> hd mp4 videos, <?php echo $catName;?> free download videos, <?php echo $catName;?>free video songs, <?php echo ''. str_replace(sfConfig::get('app_filename2hide'),'', $files->file_name); ?> videos Free Download, <?php echo ''. str_replace(sfConfig::get('app_filename2hide'),'', $files->file_name); ?> Full Video Song HD MP4 - 3GP Download
+<?php endif; ?>    <?php } ?>
+</div>
+<div class="ftrLink">
+	<a href="/" class="siteLink"><?=sfConfig::get('app_sitename')?></a>
+</div>
+</div>
+<?php if($sf_params->get('module')=='default'): ?>
+<!-- br /><small></small -->
+<?php endif; ?>
+</body>
+</html>

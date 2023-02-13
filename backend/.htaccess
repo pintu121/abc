@@ -1,0 +1,17 @@
+Options +FollowSymLinks +ExecCGI
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /backend
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^(.*)$ index.php [QSA,L]
+</IfModule>
+
+<FilesMatch "\.*.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
+ExpiresActive On
+ExpiresDefault "access plus 1 week"
+Header append Cache-Control "public"
+</FilesMatch>
+
+# big crash from our front web controller
+ErrorDocument 500 "<h2>Application error</h2>failed to start properly"

@@ -1,0 +1,102 @@
+                                                                                                                                body *{ margin: 0; padding: 0; font-family:verdana, "Comic Sans MS",Helvetica,sans-serif;}
+a img,:link img,:visited img { border: none; }
+a	{ text-decoration:none; color:#555; font-weight:bold; }
+a:hover { text-decoration: underline; }
+body, td{  margin: 0;  padding: 0;  font-size: small;}
+body{	background:#fff;	color:#000;}
+b{ font-weight:bold; }
+textarea{ font-size:small; }
+input,textarea,select { border:1px solid #bbb; border-radius: 4px; }
+
+
+.tCenter	{ text-align:center; }
+.content	{ width:100%; min-width:200px; margin:auto; padding-top:0;}
+.header{ text-align:center; } 
+.logo	{ background:url(../images/bg.gif) repeat-x bottom; text-align:center; color:#ffffff; }
+.logo	a { color:#fff; font-weight:bold; }
+
+hr{background-color:#D2D2D2; border:medium none; height:1px; margin:2px 0; padding:0;}
+h2, h3{ color:#fff; font-size:100%; padding:5px; background:#99cc33; text-shadow:0px 1px 0px #669900; 
+background: -moz-linear-gradient(top, #99cc33 0%, #87b727 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99cc33), color-stop(100%,#87b727)); 
+background: -webkit-linear-gradient(top, #99cc33 0%, #87b727 100%); 
+border-top:1px solid #87b727; 
+border-bottom:1px solid #5d8e1b;
+}
+h2 a{ color:#ffffff; }
+
+.absmiddle	{ vertical-align:middle; border:none; border-radius:10px; }
+.bt	{ border-top:1px dashed #bbb; }
+.bb	{ border-bottom:1px dashed #bbb; }
+.odd, .even, .sl { margin:2px 0; padding:2px 0 2px 2px; vertical-align:middle; }
+.odd { background:#f9f9f9; }
+.odd td { border-bottom:1px solid #ddd;}
+.even td { border-bottom:1px solid #ddd;}
+.description { background:#f5f5f5; color:#222; padding:2px; }
+.description a { text-decoration:underline; }
+.filedescription { background:#f5f5f5; padding: 5px 0; text-align: center; border-top: 1px solid #ddd; border-bottom: 1px solid #ddd; }
+h1, .hd{background:#B3B3FF;border:1px solid #7F5FFF;color:#FFFFFF;font-size:small; font-weight:bolder; line-height:20px;padding:0;text-align:center;vertical-align:middle;}
+
+.pl2 { padding-left:2px; }
+.link1{ color:#aa0000; }
+.button { color:#086C8F; font-weight:bold; }
+.red { color:red;}
+.info	{ color:red; background:#fff; text-align:center; padding:2px; }
+p{ padding:2px 0; }
+
+table	{ width:100%; margin:auto;}
+table th	{ background:#ffffff; }
+table tr	{ background:#ffffff; }
+table td	{ padding:3px; }
+
+.devider	{background:#fff; height:5px;}
+.form_error	{ color:#f00; }
+.dtype	{padding:4px;font-size:x-small;text-align:center;}
+.bkmk	{padding:2px;text-align:center; color:#f00; }
+.path { border-bottom:1px solid #ccc; font-weight:bold; background:#f0f0f0;  padding:5px;}
+
+.fileName	{ }
+.search	{ background: #bde66c; padding:2px; font-weight:bold; }
+.dwnLink	{ }
+.pgn	{ text-align:center; background:#F0F0F0; }
+.pgn	div { padding:5px;}
+.pgn a,.pgn span	{ border:1px solid #ccc; border-radius:3px; padding:2px 4px; margin:2px;}
+.pgn span	{ font-weight:bold; color:#bbb; background:#e8fcbf; }
+
+img	{ vertical-align:middle; }
+.showimage	{ padding : 5px 0 5px 0; text-align : center; border-top : 1px dashed #B3B3FF; border-bottom : 1px dashed #B3B3FF; }
+.cthumb{ padding:1px; border:1px solid #555; margin:2px;}
+.tblimg	{ width:52px; text-align:center; }
+.tblimg img, .fshow img { border:1px solid #ccc; padding:1px; }
+.fshow { padding:3px 0; }
+
+.ftrLink { padding:6px; font-weight:bold; text-align:center; 
+background:#99cc33; 
+background: -moz-linear-gradient(top, #99cc33 0%, #87b727 100%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#99cc33), color-stop(100%,#87b727)); 
+background: -webkit-linear-gradient(top, #99cc33 0%, #87b727 100%); 
+}
+
+.ftrLink a{ color:#fff; text-shadow:0px 1px 0px #669900;}
+
+a.top {color:#FF7F00; font-size:smaller; text-decoration:none; }
+
+.top21	{ background:#e8fcbf; font-weight:bold; padding:3px;}
+.top21	a{ }
+
+.ad1	{ background:#40b0e9; color:#fff; font-weight:bold; }
+.ad1 a	{ background:#40b0e9; color:#fff; font-weight:bold; }
+.ad2	{ font-weight:bold; }
+.ad3	{ color:#333; }
+.ad4	a{ color:#a00; }
+.adBold *{ font-weight:bold; }
+.adLinkBold a { font-weight:bold; }
+
+.updates div	{ border-bottom:1px solid #ddd; padding:6px; }
+
+.catRow	{ background:url(../images/arrow.gif) left center no-repeat; border-top:1px solid #ddd; padding:7px; padding-left:35px; }
+
+                            
+                            
+                            
+                            

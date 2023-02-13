@@ -1,0 +1,13 @@
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_fetch_object(): supplied argument is not a valid MySQL result resource in /home/mirchilo/public_html/skyitech/batch/cron-mirchiloft-k7w5n.php on line 13
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56
+[04-Sep-2014 01:27:37 UTC] PHP Warning:  mysql_query(): A link to the server could not be established in /home/mirchilo/public_html/skyitech/dbconnect.php on line 56

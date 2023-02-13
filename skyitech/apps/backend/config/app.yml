@@ -1,0 +1,36 @@
+# default values
+dev:
+  webpath:   http://mirchiloft.sky/backend
+  upload_dir:   http://mirchiloft.sky/siteuploads
+  upload_dir_name:   http://mirchiloft.sky/siteuploads
+  frontsiteurl:   http://mirchiloft.sky
+  webmaster: no-reply@mirchiloft.com 
+  filename2hide: (mirchiloft.com)
+  sitename: MirchiLoft.Com
+
+mirchiloft:
+  webpath:   http://www.mirchiloft.com/backend
+  upload_dir:   http://www.mirchiloft.com/siteuploads
+  upload_dir_name:   http://www.mirchiloft.com/siteuploads
+  webmaster: admin@mirchiloft.com
+  frontsiteurl:   http://www.mirchiloft.com
+  filename2hide: (MirchiLoft.Com)
+  sitename: MirchiLoft.Com
+
+all:
+  setorder: on
+  sfImageTransformPlugin:
+   default_adapter: GD # GD or ImageMagick
+   default_image:
+     mime_type: image/png
+     filename: Untitled.png
+     width: 100
+     height: 100
+     color: '#FFFFFF'
+   font_dir: /usr/share/fonts/truetype/msttcorefonts
+   mime_type:
+     auto_detect: true
+     library: gd_mime_type #  gd_mime_type (GD), Fileinfo (PECL), MIME_Type (PEAR)
+  
+                            
+                            

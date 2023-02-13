@@ -1,0 +1,4 @@
+# category list
+list:
+  enabled: on
+  lifetime:    1800

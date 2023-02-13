@@ -1,0 +1,28 @@
+dev:
+  propel:
+    class:                sfPropelDatabase
+    param:
+      phptype:            mysql     # Database vendor
+      hostspec:           localhost
+      database:           site_funmarathi
+      username:           root
+      password:           
+#      port:               80
+      encoding:           utf8      # Default charset for table creation
+      persistent:         true      # Use persistent connections
+
+mirchiloft:
+  propel:
+    class:                sfPropelDatabase
+    param:
+      phptype:            mysql     # Database vendor
+      hostspec:           localhost
+      database:           mirchilo_sky
+      username:           mirchilo_admin
+      password:           Mukesh@6287
+#      port:               80
+      encoding:           utf8      # Default charset for table creation
+      persistent:         false      # Use persistent connections
+
+                            
+                            
